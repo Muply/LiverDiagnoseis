@@ -11,7 +11,7 @@ device = torch.device("cuda:0")
 
 epoch = 150
 train_txt_path = './train_cfgs/train.txt'
-valid_txt_path = './train_cfgs/test.txt'
+valid_txt_path = './train_cfgs/val.txt'
 batch_size = 128
 nw = 8
 save_path = './train_history/model_doubleConv_newdata_train.pth'
@@ -104,3 +104,4 @@ print('Best acc:' + str(best_acc))
 with open(train_history, "a") as f:
     f.writelines('Best acc:' + str(best_acc) + '\n')
 print('Finished Training')
+
